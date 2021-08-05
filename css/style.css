@@ -373,6 +373,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -499,6 +503,40 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 300px;
+  }
+  .navbar__search, .navbar__profile, .navbar-menu {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 16px;
+    height: 11px;
+    background-color: #fff;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
 }
 /*# sourceMappingURL=style.css.map */

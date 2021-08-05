@@ -21,3 +21,25 @@
   .search
     &__input
       width: 340px
+@media screen and ( max-width:768px  )
+  .container
+    max-width: 300px
+  .navbar
+    &__search, &__profile, &-menu
+      display: none
+  .menu
+    &-button
+      display: flex
+      align-content: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      cursor: pointer
+      padding: 0
+      width: 16px
+      height: 11px
+      background-color: #fff
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $font-color
