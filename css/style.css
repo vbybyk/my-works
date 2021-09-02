@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -471,6 +472,113 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 18px 0;
+}
+
+.breadcrumbs-list__item {
+  margin-right: 4px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumbs-list__item:not(:last-child)::after {
+  content: '/';
+  margin-left: 3px;
+}
+
+.breadcrumbs-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotel {
+  margin-top: 23px;
+  margin-bottom: 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-text__offer {
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+.hotel-name {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel-facilities {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.offer {
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 13px;
+  color: white;
+}
+
+.hotel-rating {
+  max-width: 65px;
+  min-height: 45px;
+  background-color: #EC1F46;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.hotel-rating__text {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.hotel-rating__ammount {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media screen and (max-width: 1200px) {
