@@ -26,6 +26,13 @@
     margin: 0
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-rcolumn
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .offer
   padding: 4px 9px
   background-color: $brand-pink-color
@@ -52,6 +59,9 @@
   height: 450px
   position: relative
   border-radius: 8px
+  &-slide
+    &__img
+      max-width: 100%
   &:after
     content: ''
     position: absolute
@@ -90,3 +100,69 @@
       width: 10px
       height: 18px
       padding: 0
+.booking
+  background-color: $brand-blue-color
+  padding: 28px
+  width: 350px
+  height: 210px
+  border-radius: 8px
+  color: white
+  &__text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__price-start
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-size: 12px
+    line-height: 16px
+  &__parameters
+    font-size: 12px
+    line-height: 16px
+  &__num-guests
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+  &__guests-text
+    margin-left: 9px
+  &__num-rooms
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__call-center
+    display: flex
+    justify-content: space-between
+  &__quick
+    font-size: 18px
+    line-height: 25px
+  &__call-number
+    display: flex
+    align-items: center
+    margin-bottom: 17px
+  &__tel
+    font-size: 18px
+    line-height: 25px
+    margin-left: 8px
+button
+  width: 295px
+  height: 45px
+  border-radius: 4px
+  background-color: $brand-pink-color
+  font-size: 14px
+  line-height: 19px
+  border: none
+  color: white
+  cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  border-radius: 4px
