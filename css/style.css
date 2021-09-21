@@ -774,7 +774,7 @@ template {
   margin-left: 8px;
 }
 
-button {
+.booking-button {
   width: 295px;
   height: 45px;
   border-radius: 4px;
@@ -790,6 +790,97 @@ button {
   width: 347px;
   height: 213px;
   border-radius: 4px;
+}
+
+.newsletter {
+  padding: 98px 0 87px 0;
+  margin-bottom: 40px;
+  background-image: url(../img/newsletter-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.newsletter:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 731px;
+  margin: auto;
+}
+
+.newsletter-title {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.email__input {
+  width: 350px;
+  height: 55px;
+  padding-left: 27px;
+  padding-right: 80px;
+  background-color: #F5FAFE;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.email__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 65px;
+  height: 55px;
+  background-color: #EC1F46;
+  color: white;
+  border: none;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
