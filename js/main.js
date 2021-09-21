@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.hotel-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -12,6 +12,20 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
+  },
+
+});
+
+const revswiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--prev',
+    prevEl: '.reviews-slider__button--next',
   },
 
 });

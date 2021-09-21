@@ -1,0 +1,89 @@
+.reviews-title
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 45px
+  text-align: center
+  text-transform: uppercase
+  color: #333333
+  margin-top: 40px
+  margin-bottom: 70px
+.reviews-slider
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: start
+    position: relative
+    width: 731px
+    min-height: 280px
+    margin: auto
+    background-color: #fff
+    border-radius: 8px
+    margin-top: 45px
+    &:before
+      content: ''
+      background-image: url(../img/quotes-before.svg)
+      background-repeat: no-repeat
+      position: absolute
+      width: 70px
+      height: 47px
+      left: 64px
+      top: 13px
+    &:after
+      content: ''
+      background-image: url(../img/quotes-after.svg)
+      background-repeat: no-repeat
+      position: absolute
+      width: 70px
+      height: 47px
+      right: 60px
+      top: 118px
+  &__profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -45px
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    margin-bottom: 9px
+  &__name
+    font-size: 12px
+    line-height: 15px
+    color: #EC1F46
+    margin-bottom: 10px
+  &__date
+    font-size: 10px
+    line-height: 13px
+    margin-bottom: 4px
+  &__stars
+    margin: 0
+  &__text
+    margin: 30px 97px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 160%
+    text-align: justify
+  &__button
+    position: absolute
+    z-index: 99
+    padding: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    border: none
+    background-color: transparent
+    background-position: center
+    cursor: pointer
+    &--prev
+      background-image: url(../img/reviews-arrow-back.svg)
+      background-repeat: no-repeat
+    &--next
+      background-image: url(../img/reviews-arrow-next.svg)
+      background-repeat: no-repeat
+      right: 0
