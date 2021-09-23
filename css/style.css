@@ -1173,12 +1173,39 @@ template {
 .grid {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
 }
 
 .grid-card {
   border: solid 1px red;
-  width: 350px;
-  height: 500px;
+  min-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-card:nth-child(1) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.grid-card__big {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid-card__big--left {
+  border: solid 1px blue;
+}
+
+.grid-card__big--right {
+  border: solid 1px blue;
+  background: #0A223D;
 }
 
 @media screen and (max-width: 1200px) {

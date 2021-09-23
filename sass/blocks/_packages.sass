@@ -10,7 +10,21 @@
     text-transform: uppercase
 .grid
   display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  column-gap: 30px
+  row-gap: 30px
   &-card
     border: solid 1px red
-    width: 350px
-    height: 500px
+    min-height: 500px
+    border-radius: 8px
+    overflow: hidden
+    &:nth-child(1)
+      grid-column-start: span 2
+    &__big
+      display: grid
+      grid-template-columns: 1fr 1fr
+      &--left
+        border: solid 1px blue
+      &--right
+        border: solid 1px blue
+        background: #0A223D
