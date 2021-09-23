@@ -1156,6 +1156,31 @@ template {
   cursor: pointer;
 }
 
+.packages {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.packages-title {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-card {
+  border: solid 1px red;
+  width: 350px;
+  height: 500px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
