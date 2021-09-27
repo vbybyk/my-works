@@ -1206,12 +1206,52 @@ template {
 }
 
 .grid-card__big--left {
-  border: solid 1px blue;
+  position: relative;
 }
 
 .grid-card__big--right {
-  border: solid 1px blue;
+  padding: 46px 21px 30px 44px;
+  color: white;
   background: #0A223D;
+}
+
+.grid-card__offerbig {
+  position: absolute;
+  top: 34px;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.grid-card__imgbig {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-card__big-hotel {
+  margin-top: 5px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.grid-card__big-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 50px;
+}
+
+.grid-card__big-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid-card__img {
