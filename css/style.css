@@ -474,6 +474,10 @@ template {
   display: flex;
 }
 
+.navbar__search__mobile_visible, .navbar__profile__mobile_visible {
+  display: none;
+}
+
 .breadcrumbs-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1536,13 +1540,13 @@ template {
   .container {
     max-width: 960px;
   }
-  .swiper {
+  .hotel-slider {
     width: 600px;
   }
-  .swiper-slide {
-    background-color: black;
+  .hotel-slider__item {
+    background-color: transparent;
   }
-  .swiper-slide__img {
+  .hotel-slider__item--img {
     max-width: none;
     max-height: 100%;
   }
@@ -1570,17 +1574,85 @@ template {
   img {
     max-width: 100%;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-rcolumn {
+    min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
+  }
   .search__input {
     width: 340px;
+  }
+  .reviews-slider__item {
+    width: 579px;
+    min-height: 280px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 300px;
+    max-width: 576px;
+    width: 92%;
   }
-  .navbar__search, .navbar__profile, .navbar-menu {
+  body {
+    padding-top: 78px;
+  }
+  .navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+  .navbar__search__mobile_hidden, .navbar__profile__mobile_hidden {
     display: none;
+  }
+  .navbar__search__mobile_visible, .navbar__profile__mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .navbar__profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 78px;
+  }
+  .navbar-bottom__visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__link {
+    margin-bottom: 20px;
+  }
+  .profile__avatar {
+    margin-bottom: 10px;
+  }
+  .profile__name {
+    color: white;
+    margin: 0;
   }
   .menu-button {
     display: -webkit-box;
@@ -1606,6 +1678,89 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-rcolumn {
+    min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+  .packages {
+    display: none;
+  }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 92%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities-card {
+    width: 49%;
+    height: 255px;
+  }
+  .footer-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+  .hotel-grid {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hotel-slider {
+    width: 90%;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .activities-card {
+    width: 90%;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .reviews-slider__item {
+    width: 280px;
+    min-height: 480px;
+  }
+  .reviews-slider__text {
+    margin: 0;
+  }
+  .footer-wrapper {
+    display: block;
+  }
+  .email__input {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */

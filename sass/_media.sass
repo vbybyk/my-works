@@ -1,13 +1,14 @@
 @media screen and ( max-width: 1200px )
   .container
     max-width: 960px
-  .swiper
-    width: 600px
-    &-slide
-      background-color: black
-      &__img
-        max-width: none
-        max-height: 100%
+  .hotel
+    &-slider
+      width: 600px
+      &__item
+        background-color: transparent
+        &--img
+          max-width: none
+          max-height: 100%
 @media screen and ( max-width: 992px )
   .container
     max-width: 720px
@@ -25,15 +26,63 @@
     width: 132px
   img
     max-width: 100%
+  .hotel
+    &-grid
+      flex-direction: column
+    &-rcolumn
+      min-height: 450px
+    &-slider
+      height: 350px
+
   .search
     &__input
       width: 340px
+  .reviews-slider
+    &__item
+      width: 579px
+      min-height: 280px
 @media screen and ( max-width:768px  )
   .container
-    max-width: 300px
+    max-width: 576px
+    width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &__profile, &-menu
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 5
+    &__search, &__profile
+      &__mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          margin-bottom: 20px
+    &__profile
+      flex-direction: column
+      justify-content: center
+
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      top: 78px
+
+      &__visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__link
+        margin-bottom: 20px
+  .profile
+    &__avatar
+      margin-bottom: 10px
+    &__name
+      color: white
+      margin: 0
   .menu
     &-button
       display: flex
@@ -50,3 +99,75 @@
         width: 16px
         height: 1px
         background-color: $font-color
+  .hotel
+    &-grid
+      flex-direction: column
+    &-rcolumn
+      min-height: 450px
+    &-slider
+      height: 350px
+
+  .booking
+    width: 100%
+  .map
+    width: 100%
+  .packages
+    display: none
+  .newsletter
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        // top: 32px
+        // &--prev
+        //   left: 50%
+        //   transform: translate(-50%,0)
+        //   margin-left: -65px
+        // &--next
+        //   right: 50%
+        //   transform: translate(-50%,0)
+        //   margin-left: -65px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &-card
+      width: 49%
+      height: 255px
+  .footer
+    &-wrapper
+      display: block
+@media screen and ( max-width: 576px )
+  .logo
+    width: 99px
+  .hotel
+    &-grid
+      align-items: center
+    &-slider
+      width: 90%
+      height: 180px
+      margin-bottom: 20px
+  .activities
+    &-card
+      width: 90%
+      height: 255px
+      margin-bottom: 20px
+  .reviews-slider
+    &__item
+      width: 280px
+      min-height: 480px
+    &__text
+      margin: 0
+  .footer
+    &-wrapper
+      display: block
+  .email
+    &__input
+      width: 280px
