@@ -28,11 +28,15 @@
     max-width: 100%
   .hotel
     &-grid
-      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
     &-rcolumn
       min-height: 450px
+      flex-direction: row
+      align-items: stretch
     &-slider
-      height: 350px
+      width: 700px
+      height: 450px
 
   .search
     &__input
@@ -154,6 +158,8 @@
       width: 90%
       height: 180px
       margin-bottom: 20px
+    &-rcolumn
+      flex-direction: column
   .activities
     &-card
       width: 90%
