@@ -685,22 +685,25 @@
           <!-- /.footer-wrapper__contacts -->
           <div class="footer-wrapper__message-form">
             <h3 class="footer-wrapper__title">Send us a message</h3>
-            <form action="#" class="footer-wrapper__form">
+            <form action="send.php" method="post" class="footer-wrapper__form">
               <input
                 type="text"
                 class="footer-wrapper__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="footer-wrapper__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer-wrapper__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="footer-wrapper__button" type="submit">Send</button>
             </form>
