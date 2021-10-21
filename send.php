@@ -52,6 +52,5 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thanks.html');
