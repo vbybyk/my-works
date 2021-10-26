@@ -1536,6 +1536,126 @@ template {
   cursor: pointer;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal-overlay__visible {
+  visibility: visible;
+  opacity: 100;
+}
+
+.modal-dialogue {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 33px 88px;
+  max-width: 478px;
+  background-color: #0A223D;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.modal-dialogue__visible {
+  visibility: visible;
+  opacity: 100;
+}
+
+.modal-dialogue__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+}
+
+.modal-dialogue__message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-dialogue__title {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+}
+
+.modal-dialogue__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-dialogue__input {
+  padding: 18px 23px;
+  margin-bottom: 15px;
+  min-width: 100%;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal-dialogue__message {
+  padding: 18px 23px;
+  margin-bottom: 22px;
+  max-width: 100%;
+  max-height: 123px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal-dialogue__button {
+  width: 160px;
+  padding: 18px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;

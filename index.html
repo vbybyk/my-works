@@ -137,7 +137,11 @@
             </p>
           </div>
           <!-- /.hotel-text -->
-          <div class="hotel-rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="hotel-rating"
+          >
             <span class="hotel-rating__text">User ratings</span>
             <span class="hotel-rating__ammount">4.5/5</span>
           </div>
@@ -210,7 +214,13 @@
                 </div>
               </div>
               <!-- /.booking__call-center -->
-              <button class="booking-button">View Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="booking-button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -714,9 +724,78 @@
       </div>
     </footer>
     <!-- /.footer -->
-
-    <script src="js/swiper-bundle.min.js"></script>
+    <div data-toggle="Escape" class="modal" id="booking-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialogue">
+        <a href="#" class="modal-dialogue__close"
+          ><img src="img/close.svg" alt="close"
+        /></a>
+        <div class="modal-dialogue__message-form">
+          <h3 class="modal-dialogue__title">Booking</h3>
+          <form action="send.php" method="post" class="modal-dialogue__form">
+            <input
+              type="text"
+              class="modal-dialogue__input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              type="text"
+              class="modal-dialogue__input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <textarea
+              class="modal-dialogue__message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button class="modal-dialogue__button" type="submit">Send</button>
+          </form>
+        </div>
+        <!-- /.modal-wrapper__message-form -->
+      </div>
+    </div>
+    <!-- /.modal -->
+    <div data-toggle="Escape" class="modal" id="rating-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialogue">
+        <a href="#" class="modal-dialogue__close"
+          ><img src="img/close.svg" alt="close"
+        /></a>
+        <div class="modal-dialogue__message-form">
+          <h3 class="modal-dialogue__title">Send us a feedback</h3>
+          <form action="send.php" method="post" class="modal-dialogue__form">
+            <input
+              type="text"
+              class="modal-dialogue__input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              type="text"
+              class="modal-dialogue__input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <textarea
+              class="modal-dialogue__message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button class="modal-dialogue__button" type="submit">Send</button>
+          </form>
+        </div>
+        <!-- /.modal-wrapper__message-form -->
+      </div>
+    </div>
+    <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
